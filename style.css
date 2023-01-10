@@ -1,86 +1,84 @@
-body {
-    margin: 0;
-    font-family: arial, sans-serif;
-    font-size:14px;
-    color: #202124;
-}
-
-a {
+body { /* Mise en forme générale du corps du texte */
     margin: 10px;
-    text-decoration: none;
+    font-family: arial, sans-serif;
+    font-size: 14px;
     color: black;
 }
 
-a:hover {
+a { /* Mise en forme des liens hypertexte */
+    margin: 10px;
+    text-decoration: none;
+    color: #777777;
+}
+
+a:hover { /* Ajout du soulignage lors du passage sur les liens */
     text-decoration: underline;
 }
 
-nav {
+nav { /* Aligne le texte et le place à droite */
     display: flex;
     justify-content: right;
 }
 
-.header-nav {
+.header-nav { /* Recentre et ajuste les marges de l'en-tête */
     display: flex;
     align-items: center;
-    padding-left: 20px;
     margin-right: 10px;
 }
 
-ul > a, ul > img {
-    padding: 0.8px;
+ul > a, ul > img { /* Ajoute espace entre images et liens */
+    padding: 10px;
 }
 
-.header-img:hover {
+.header-img:hover { /* Ajoute une ombre lors du passage sur les images, plus les bords arrondis, et le pointeur */
     box-shadow: 0 0 10px 0 grey;
     border-radius: 20px;
     cursor: pointer;
 }
 
-section {
+section { /* Aligne la section principale, et place les éléments en colonne */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5vh;
-
 }
 
-.logo {
+.logo { /* Ajoute un espace après le logo Google */
     padding-bottom: 50px;
 }
 
-.text_box {
+.text_box { /* Mise en forme de la barre de texte */
     display: flex;
     justify-content: space-between;
-    width: 550px;
-    height: 28px;
+    width: 500px;
+    height: 25px;
     border: 1px solid lightgray;
     border-radius: 20px;
 }
 
-.text_box:hover {
+.text_box:hover { /* Ajout de l'ombre lors du passage sur la barre de texte */
     box-shadow: 0 0 10px 0 grey;
 }
 
-.text_box > input {
-    flex-grow: 1;
+.text_box > input { /* Mise en forme de la barre de texte (espacement des images et bordures) */
+    flex-grow: 0.9;
     border: none;
     outline: none;
 }
 
-.loupe, .micro, .camera  {
+.loupe, .micro, .camera { /* Bords arrondis sur les 3 petites images */
     border-radius: 50%;
 }
 
-img:hover {
+img:hover { /* Ajout du pointeur main lors du passage sur les images */
     cursor:pointer;
 }
 
-.buttons {
+.buttons { /* Ajout d'espace avant les boutons */
     padding-top: 50px;
 }
 
-button {
+button { /* Mise en forme des boutons */
     background-color: whitesmoke;
     border-radius: 5px;
     border: none;
@@ -89,36 +87,35 @@ button {
     margin: 0 4px;
 }
 
-button:hover {
+button:hover { /* Ajout de l'ombre au passage sur les boutons */
     cursor: pointer;
     box-shadow: 0 0 10px 0 grey;
 }
 
-footer {
+footer { /* Place le pied de page en bas de la page */
     background-color: whitesmoke;
+    color: darkgrey;
     position: fixed;
     bottom: 0;
     width: 100vw;
 }
 
-#footer-left {
+#footer-left { /* Aligne et centre les liens du pied de page à gauche */
     display: flex;
-    justify-self: start;
-    float: left;
-    padding-left: 20px;
     align-items: center;
 }
 
-#footer-right {
+#footer-right { /* Aligne et centre les liens du pied de page à droite et ajout d'une marge */
     display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
     align-items: center;
+    margin-right: 250px;
 }
 
-@media (max-width: 630px) {
+/* Ajout de media queries */
+
+@media (max-width: 630px) { /* Lorsque la fenêtre est moins large que 630 pixels*/
     #footer-nav{
-        flex-direction: column;
+        flex-direction: column; /* Réorganise en colonnes*/
     }
     #footer-left {
         justify-content: center;
@@ -127,11 +124,11 @@ footer {
         justify-content: center;
     }
     .text_box {
-        width: 95vw;
+        width: 95vw; 
     }
 }
 
-@media (max-height: 522px) {
+@media (max-height: 522px) { /* Lorsque la fenêtre est moins longue que 522 pixels*/
     body{
         overflow-x: hidden;
     }
@@ -139,18 +136,6 @@ footer {
         margin-bottom: 20px;
     }
     footer{
-        position: relative;
-    }
-}
-
-@media (max-height: 570px) and (max-width: 630px) {
-    body{
-        overflow-x: hidden;
-    }
-    section{
-        margin-bottom: 13px;
-    }
-    footer {
         position: relative;
     }
 }
