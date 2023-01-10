@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Pour info, je me suis aidée de ces 2 vidéos sur Youtube: 
+https://www.youtube.com/watch?v=5EJWYUwOe3E (WittCode)
+https://www.youtube.com/watch?v=TrfyFqKmhmk (Coding with Russ)
+ainsi que les cours de OpenClassRoom, du code source de la page Google et des recherches sur StackOverFlow/Google-->
+<html lang="fr">
+
+<head> <!--Ajout du titre Google avec le logo lettre G, et les paramètres de la page HTML-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Google</title>
+        <link rel="icon" href="./Images/G.PNG">
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+    <header> <!--Ajout de l'en-tête avec liens de navigation sous forme de liste non ordonnée-->
+        <nav>
+            <ul class="header-nav">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+                <img class="header-img" src="./Images/Applis.JPG" alt="Applications Google" width="26" height="auto">
+                <img class="header-img" src="./Images/Compte.JPG" alt="Compte Google" width="35" height="auto">
+            </ul>
+        </nav>
+    </header>
+
+    <section> <!--Ajout du logo Google, suivi de la barre de texte et des boutons-->
+        <div class="logo">
+            <img src="./Images/Logo.PNG" alt="Logo Google" width="250" height="auto">
+        </div>
+        <div class="text_box"> <!--Ajout des icones dans la barre de texte-->
+            <img class=loupe src="./Images/Loupe.JPG" alt="Recherche" width="25" height="25">
+            <input type="text">
+            <img class=micro src="./Images/Micro.JPG" alt="Utiliser la recherche vocale" width="25" height="25">
+            <img class=camera src="./Images/Camera.JPG" alt="Rechercher par image" width="25" height="25">
+        </div>
+        <div class="buttons">
+            <button>Recherche Google</button>
+            <button>J'ai de la chance</button>
+        </div>
+    </section>
+
+    <footer><!--Ajout du pied de page avec liens de navigations, une partie à gauche et une partie à droite-->
+        <nav id="footer-nav">
+            <ul id="footer-left">
+                <a href="#">À propos</a>
+                <a href="#">Publicité</a>
+                <a href="#">Entreprise</a>
+                <a href="#">Comment fonctionne la recherche Google ?</a>
+            </ul>
+            <ul id="footer-right">
+                <a href="#">Confidentialité</a>
+                <a href="#">Conditions</a>
+                <a href="#">Paramètres</a>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
