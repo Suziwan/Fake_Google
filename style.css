@@ -54,6 +54,8 @@ section { /* Aligne la section principale, et place les éléments en colonne */
     height: 25px;
     border: 1px solid lightgray;
     border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .text_box:hover { /* Ajout de l'ombre lors du passage sur la barre de texte */
@@ -100,16 +102,16 @@ footer { /* Place le pied de page en bas de la page */
     width: 100vw;
 }
 
-#footer-left { /* Aligne et centre les liens du pied de page à gauche */
+/*#footer-left { /* Aligne et centre les liens du pied de page à gauche
     display: flex;
     align-items: center;
 }
 
-#footer-right { /* Aligne et centre les liens du pied de page à droite et ajout d'une marge */
+#footer-right { /* Aligne et centre les liens du pied de page à droite et ajout d'une marge
     display: flex;
     align-items: center;
     margin-right: 250px;
-}
+}*/
 
 /* Ajout de media queries */
 
