@@ -1,5 +1,5 @@
-# Fake-Google
-Copie de la page d'accueil Google en HTML/CSS
+# Fake_Google
+Copy of the Google homepage (in french) using HTML/CSS
 
 Voir les commentaires sur le code directement (index.html et style.css)
 
