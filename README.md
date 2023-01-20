@@ -1,2 +1,2 @@
 # Fake_Google
-Copy of the Google homepage (in french) using HTML/CSS
+Copy of the Google homepage (in French) using HTML/CSS
