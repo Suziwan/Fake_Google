@@ -1,5 +1,4 @@
 body { /* Mise en forme générale du corps du texte */
-    margin: 10px;
     font-family: arial, sans-serif;
     font-size: 14px;
     color: black;
@@ -44,7 +43,7 @@ section { /* Aligne la section principale, et place les éléments en colonne */
 }
 
 .logo { /* Ajoute un espace après le logo Google */
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .text_box { /* Mise en forme de la barre de texte */
@@ -54,8 +53,7 @@ section { /* Aligne la section principale, et place les éléments en colonne */
     height: 25px;
     border: 1px solid lightgray;
     border-radius: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 8px;
 }
 
 .text_box:hover { /* Ajout de l'ombre lors du passage sur la barre de texte */
@@ -77,7 +75,7 @@ img:hover { /* Ajout du pointeur main lors du passage sur les images */
 }
 
 .buttons { /* Ajout d'espace avant les boutons */
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 button { /* Mise en forme des boutons */
@@ -95,6 +93,7 @@ button:hover { /* Ajout de l'ombre au passage sur les boutons */
 }
 
 footer { /* Place le pied de page en bas de la page */
+    display: flex;
     background-color: whitesmoke;
     color: darkgrey;
     position: fixed;
